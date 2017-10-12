@@ -1,0 +1,45 @@
+(a)
+
+C:\Users\Cameron\Desktop\Assignment1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Cameron\Desktop\Assignment1>
+
+(b)
+
+8 commits, and I acheived this by using 'git log'
+
+(c)
+
+Wed Sep 27 16:31:42 2017, 'git log -p'
+
+(d)
+
+commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+commit 36a8e55e4bbdd171ab57d979e1a802d740f2db9b
+
+(e)
+
+When multiple people are working on a repo, it is usually best to have a branch unique to one person if they are all changing the same files to prevent commit conflicts.
+It is also best to have a current working version (master), and a development version under a different name just in case the development branch gets broken or ruined, you can always return to the master branch.
+
+(f)
+
+'git log' is a history of all the commits in a repository, and 'git status' is the current difference in the branch from the last commit.
+
+(g)
+
+'git log -p'
+
+(h)
+
+git log --grep="file"
+
+(i)
+
+Inheritance is the idea of creating classes the share the same functions and follow the same conventions, but separate themselves into more detail. For example, in this project we have a "child class" CommonSword that inherits from its "parent class" Weapon because a common sword is a weapon, but not every weapon is a common sword.
+Polymorphism is having a function in a parent class that has no definition, but allows child classes to specify that function, while also enforcing that function should exits.
+Encapsulation is the idea of keeping certain member functions and data from being used or modified outside of that class or child classes.
