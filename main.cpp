@@ -1,7 +1,7 @@
 
-/* 
+/*
  * File:   main.cpp
- * Author: Javier <jrescobara@gmail.com> 
+ * Author: Javier <jrescobara@gmail.com>
  *
  * Created on September 25, 2017, 3:19 PM
  */
@@ -14,8 +14,8 @@
 using namespace std;
 
 /**
- * Simulates the behavior of a weapon in the presence and absence of armor, by 
- * printing its damage on standard output. 
+ * Simulates the behavior of a weapon in the presence and absence of armor, by
+ * printing its damage on standard output.
  * @param weapon Weapon to simulate
  * @param armor Armor points
  */
@@ -25,7 +25,7 @@ void simulateWeapon(Weapon * weapon, double armor) {
 }
 
 /*
- * 
+ *
  */
 int main(int argc, char** argv) {
 
@@ -39,6 +39,22 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon, armor);
     delete(weapon);
 
+    weapon = WeaponFactory::getInstance()->getWeapon("axe");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("crazy random sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("arakh");
+    simulateWeapon(weapon, armor);
+    cout << "\t **Special effect** " << weapon->getName() << " has reduced armor by 5!\n";
+    cout << "\t Armor: " << armor << std::endl;
+    simulateWeapon(weapon, armor);
+    cout << "\t **Special effect** " << weapon->getName() << " has reduced armor by 5!\n";
+    cout << "\t Armor: " << armor << std::endl;
+    delete(weapon);
+
     return 0;
 }
-
