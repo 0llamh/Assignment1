@@ -1,1 +1,9 @@
+I committed the changes to master branch before reading the next question, thus giving me the following output:
 
+C:\Users\Cameron\Desktop\Assignment1>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Cameron\Desktop\Assignment1>
