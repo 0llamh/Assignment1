@@ -9,6 +9,10 @@
 #include "WeaponFactory.h"
 #include "CommonSword.h"
 #include "CommonSpear.h"
+#include "SimpleAxe.h"
+#include "CrazyRandomSword.h"
+#include "DothrakiArakh.h"
+
 
 WeaponFactory* WeaponFactory::instance = NULL;
 
